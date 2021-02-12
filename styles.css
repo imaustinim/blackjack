@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
+
+@media screen and (max-width: 959px) {
+    h1 {
+        padding: 1vw 0;
+        text-align: center;
+        font-size: clamp(0.5vw, -0.875vw + 8.333vw, 3.5vw);
+    }
+
+    body {
+        padding: 3vw;
+        margin: 0;
+        background-color: #17141d;
+        color: white;
+        font-family: "DM Mono", monospace;
+    }
+
+    #alert-container {
+        text-align: center;
+        visibility: hidden;
+    }
+
+    #alert {
+        visibility: visible;
+        opacity: 0;
+        text-align: center;
+        font-size: clamp(0.35vw, -0.875vw + 8.333vw, 2.5vw);
+
+        width: fit-content;
+        color: #17141d;
+        border-color: #17141d;
+        background-color: white;
+        box-shadow: 0vw 0vw 3vw whitesmoke;
+
+        bottom: 44vw;
+        position: relative;
+        padding: 1vw;
+    }
+
+    #dealer-cards,
+    #user-cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 20vw;
+        height: 28vw;
+        flex-direction: column;
+        padding: 1vw;
+
+        border-radius: 2vw;
+        background-color: #17141d;
+        box-shadow: -1vw 0 3vw #000;
+
+        transition: transform 250ms;
+        z-index: 0;
+    }
+
+    .card:hover {
+        transform: translateY(-4vw);
+    }
+
+    .card:hover ~ .card {
+        transform: translateX(8vw);
+    }
+
+    .card:not(:first-child) {
+        margin-left: -16vw;
+    }
+
+    .card-suit {
+        padding: 1.25vw;
+        font-size: 12vw;
+        text-align: center;
+    }
+
+    .card-rank {
+        font-size: 3vw;
+        padding: 0.5vw;
+    }
+
+    .holder {
+        opacity: 0;
+    }
+
+    .top-left {
+        text-align: left;
+    }
+
+    .bottom-right {
+        text-align: right;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .button {
+        padding: 1vw;
+        margin: 0;
+
+        color: white;
+        border-color: white;
+        background-color: #17141d;
+        box-shadow: -1vw 0 3vw #000;
+
+        font-family: "DM Mono", monospace;
+        font-size: clamp(0.35vw, -0.5vw + 8.333vw, 2vw);
+    }
+
+    .button:disabled {
+        color: grey;
+        border-color: grey;
+        box-shadow: 1vw 0 3vw #000;
+
+        transition: 800ms;
+    }
+
+    .break {
+        padding: 1vw;
+    }
+
+    .holder {
+        background-color: #17141d;
+        box-shadow: none;
+        transition: none;
+    }
+
+    #dealer-value-container,
+    #user-value-container {
+        text-align: center;
+        position: relative;
+        left: 30vw;
+        bottom: 17.71vw;
+    }
+
+    #dealer-value,
+    #user-value {
+        opacity: 0;
+        text-align: right;
+        font-size: clamp(0.35vw, -0.875vw + 8.333vw, 2vw);
+
+        width: fit-content;
+        color: #17141d;
+        border-color: #17141d;
+        background-color: whitesmoke;
+        box-shadow: 0vw 0vw 3vw whitesmoke;
+
+        padding: 1vw;
+        z-index: 100;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    h1 {
+        padding: 9.6px;
+        text-align: center;
+        font-size: 33.6px;
+    }
+
+    body {
+        padding: 28.8px;
+        margin: 0;
+        background-color: #17141d;
+        color: white;
+        font-family: "DM Mono", monospace;
+    }
+
+    #alert-container {
+        text-align: center;
+        visibility: hidden;
+    }
+
+    #alert {
+        visibility: visible;
+        opacity: 0;
+        text-align: center;
+        font-size: 24px;
+
+        width: fit-content;
+        color: #17141d;
+        border-color: #17141d;
+        background-color: white;
+        box-shadow: 0px 0px 28.8px whitesmoke;
+
+        bottom: 422.4px;
+        position: relative;
+        padding: 9.6px;
+    }
+
+    #dealer-cards,
+    #user-cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 192px;
+        height: 268.8px;
+        flex-direction: column;
+        padding: 9.6px;
+
+        border-radius: 19.2px;
+        background-color: #17141d;
+        box-shadow: -9px 0 28.8px #000;
+
+        transition: transform 250ms;
+        z-index: 0;
+    }
+
+    .card:hover {
+        transform: translateY(-38.4px);
+    }
+
+    .card:hover ~ .card {
+        transform: translateX(76.8px);
+    }
+
+    .card:not(:first-child) {
+        margin-left: -153.6px;
+    }
+
+    .card-suit {
+        padding: 12px;
+        font-size: 115.2px;
+        text-align: center;
+    }
+
+    .card-rank {
+        font-size: 28.8px;
+        padding: 4.8px;
+    }
+
+    .holder {
+        opacity: 0;
+    }
+
+    .top-left {
+        text-align: left;
+    }
+
+    .bottom-right {
+        text-align: right;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .button {
+        padding: 9.6px;
+        margin: 0;
+
+        color: white;
+        border-color: white;
+        background-color: #17141d;
+        box-shadow: -9.6px 0 28.8px #000;
+
+        font-family: "DM Mono", monospace;
+        font-size: 19.2px;
+    }
+
+    .button:disabled {
+        color: grey;
+        border-color: grey;
+        box-shadow: -9.6px 0 28.8px #000;
+
+        transition: 800ms;
+    }
+
+    .break {
+        padding: 9.6px;
+    }
+
+    #dealer-value-container,
+    #user-value-container {
+        text-align: center;
+        position: relative;
+        left: 288px;
+        bottom: 170px;
+    }
+
+    #dealer-value,
+    #user-value {
+        opacity: 0;
+        text-align: right;
+        font-size: 19.2px;
+
+        width: fit-content;
+        color: #17141d;
+        border-color: #17141d;
+        background-color: whitesmoke;
+        box-shadow: 0px 0px 28.8px whitesmoke;
+
+        padding: 9.6px;
+        z-index: 100;
+    }
+}

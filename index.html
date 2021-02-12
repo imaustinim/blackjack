@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Blackjack Demo - Austin Im</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="wrapper">
+    <!-- Header -->
+    <header class="header">
+        <h1 class="header__title">Blackjack</h1>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Cards -->
+        <section id="game">
+                <article id="dealer-cards">
+                    <div class="card holder"></div>
+                </article>
+                <div id="dealer-value-container">
+                    <span id="dealer-value">
+                    </span>
+                </div>
+                </section>
+                <div class="break"></div>
+                <article id="user-cards">
+                    <div class="card holder"></div>
+                </article>
+                <div id="user-value-container">
+                    <span id="user-value">
+                    </span>
+                </div>
+        </section>
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="button" id="deal">Deal Cards</button>
+            <button class="button" id="hit" disabled>Hit</button>
+            <button class="button" id="stand" disabled>Stand</button>
+        </div>
+        <div id="alert-container"><span id="alert" class="alert"></span></div>
+    </main>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</html>
